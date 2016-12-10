@@ -6,7 +6,13 @@ module FlarumRuby
       end
 
       def index
-        api_endpoint self.api_url, :get
+        params = {
+            filter: {
+                user: 2,
+                number: 2
+            }
+        }
+        api_endpoint api_url, :get, params
       end
 
       def show

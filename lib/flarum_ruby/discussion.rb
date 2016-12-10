@@ -8,6 +8,18 @@ module FlarumRuby
       def index
         api_endpoint self.api_url, :get
       end
+
+      def create(params = {})
+
+      end
+
+      def update(params = {})
+        
+      end
+
+      def destroy(params = {})
+        
+      end
     end
   end
 end
